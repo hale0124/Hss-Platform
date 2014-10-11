@@ -5,10 +5,10 @@ return array(
             'orm_default' => array(
                 'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
                 'params'      => array(
-                    'host'     => '192.168.8.18',
+                    'host'     => 'localhost',
                     'port'     => '3306',
-                    'user'     => 'root',
-                    'password' => '2@xiorll',
+                    'user'     => 'your_user',
+                    'password' => 'your_password',
                     'dbname'   => 'hss'
                 )
             )

@@ -1,9 +1,8 @@
-zf2-zfcuser-bjyauthorization
+Hss-Platform
 ============================
 
 Zend Framework 2 Skeleton App with ZfcUser and BjyAuthorization.
 
-This repository was made using [this tutorial](http://samminds.com/2013/03/zfcuser-bjyauthorize-and-doctrine-working-together/).
 
 Getting started
 ===============
@@ -17,22 +16,7 @@ This should install the Zend Framework, ZfcUser and BjyAuthorize.
 
 Then, the only thing you need to do is setup the database using a local config file in /config/autoload and create the schema.
 
-    return array(
-        'doctrine' => array(
-            'connection' => array(
-                'orm_default' => array(
-                    'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
-                    'params'      => array(
-                        'host'     => 'localhost',
-                        'port'     => '3306',
-                        'user'     => 'someuser',
-                        'password' => 'somepassword',
-                        'dbname'   => 'database'
-                    )
-                )
-            )
-        )
-    );
+    change doctrineconnect.local.php
     
     ./vendor/bin/doctrine-module orm:validate-schema
     ./vendor/bin/doctrine-module orm:schema-tool:create
